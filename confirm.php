@@ -32,12 +32,13 @@ $paragraph_censor = str_replace($censor, '***', trim($paragraph));
         <div>
             <h3 class="text-center p-5">
                 <?php echo $paragraph ?> </h3>
+            <h5>Lunghezza della stinga <b><?php echo strlen($paragraph) ?></b></h5>
         </div>
         <!--PARAGRAFO CENSURATO-->
         <div>
             <h3 class="text-center p-5">
                 <?php echo $paragraph_censor ?> </h3>
-            <h5>Lunghezza della stinga <b><?php echo strlen($paragraph) ?></b></h5>
+            <h5>Lunghezza della stinga <b><?php echo strlen($paragraph_censor) ?></b></h5>
         </div>
     </div>
     </div>
