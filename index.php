@@ -32,14 +32,12 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
 </head>
 
 <body>
-    <!-- FORM -->
     <div class="container-md p-5 mx-auto mt-5 bg-primary text-white" id="cardData">
         <h1 class="text-center mt-2">INSERISCI IL TUO PARAGRAFO</h1>
         <!-- FORM -->
         <form action="confirm.php" method="POST">
             <section id="form-section">
                 <div class="card p-3 shadow mt-5 mb-5" id="card">
-                    <!-- FORM USER INPUT -->
                     <div class="card-body">
                         <!-- PARAGRAFO INPUT-->
                         <div class="mb-3">
@@ -66,12 +64,9 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
         </form>
     </div>
     </div>
-
-
-
-
-
     <?php
+
+
     /* 
     echo 'Ciao Classe 100'; //Serve per stampare a schermo
     var_dump('Ciao Classe 100'); //Serve avere delle info su una variabile
@@ -101,7 +96,20 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     $full_name = $first_name . ' ' . $last_name;
     $presentazione .= $full_name;
     echo "<h1>$presentazione<h1>";
-    */
+
+
+
+LE STRINGHE
+PHP ci permette di interagire con le stringhe attraverso tantissime funzioni. Nella documentazione uﬃciale troviamo la lista dettagliata di tutte: http://php.net/manual/en/ref.strings.php
+
+Alcuni esempi:
+echo $variabile - stampa il contenuto della variabile
+explode(delimitatore, stringa) - crea un array dividendo una stringa ad ogni occorrenza del delimitatore
+trim(stringa) - toglie gli spazi bianchi all’inizio e alla ﬁne di una stringa
+str_replace(porzioneDaModiﬁcare, conCosa, stringa) - sostituisce una porzione di una stringa con un nuovo valore strlen(stringa) - ritorna la lunghezza di una stringa
+str_contains(stringa, valore) - restituisce true se value è presente nella stringa, altrimenti false
+ucﬁrst(stringa) - ucwords(stringa) - rende maiuscolo il primo carattere della stringa / il primo carattere di ogni parola
+*/
     ?>
 </body>
 

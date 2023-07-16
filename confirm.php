@@ -2,6 +2,8 @@
 $paragraph = $_POST['paragraph']; // Recuperare da un Form con il metodo GET i valori inseriti
 $censor = $_POST['censor'];    // Recuperare da un Form con il metodo GET i valori inseriti
 $paragraph_censor = '';
+
+$paragraph_censor = str_replace($censor, '***', trim($paragraph));
 ?>
 
 
@@ -25,18 +27,18 @@ $paragraph_censor = '';
 </head>
 
 <body>
-    <div class="container mx-0">
+    <div class="container mx-auto ">
         <!-- PARAGRAFO ORIGINALE -->
         <div>
             <h3 class="text-center p-5">
                 <?php echo $paragraph ?> </h3>
         </div>
-    </div>
-    <!--PARAGRAFO CENSURATO-->
-    <div>
-        <h3 class="text-center p-5">
-            <?php echo $paragraph_censor ?> </h3>
-        <h5><?php var_dump('paragraph'); ?></h5>
+        <!--PARAGRAFO CENSURATO-->
+        <div>
+            <h3 class="text-center p-5">
+                <?php echo $paragraph_censor ?> </h3>
+            <h5>Lunghezza della stinga <b><?php echo strlen($paragraph) ?></b></h5>
+        </div>
     </div>
     </div>
     </div>
