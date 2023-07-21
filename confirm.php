@@ -6,7 +6,6 @@ $paragraph_censor = '';
 $paragraph_censor = str_replace($censor, '***', trim($paragraph));
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en">
 
