@@ -22,7 +22,7 @@ Il secondo file riceverà la richiesta ed eseguirà queste operazioni:
     <meta name="description" content="Free Web tutorials">
     <meta name="keywords" content="HTML, CSS">
     <meta name="author" content="Monica Izzo">
-    <title>php Badwords | Pagina iniziale</title>
+    <title>PHP Badwords | Pagina iniziale</title>
 
     <!-- icon-->
     <link rel="icon" type="image/png" sizes="32x32" href="img/faicon.png">
